@@ -1,66 +1,106 @@
-# [Tictactoe](https://yelynn1.github.io/tictactoe/ "tictactoe")
-#### [https://yelynn1.github.io/tictactoe/](https://yelynn1.github.io/tictactoe/)
+# TIC TAC TOE
 
-Tic Tac Toe game (web version) made using HTML, JS.
+**Created by:** Calon Arang / Ranbyus Varadha  
+**Copyright © 2026 Calon Arang / Ranbyus Varadha**
 
-Table of contents
-=================
+A simple and lightweight Tic Tac Toe web game built with HTML, CSS, and JavaScript.
 
-<!--ts-->
-   * [About the project](#about-the-project)
-   * [Tech Stack](#tech-stack)
-   * [Getting Started](#getting-started)
-   * [Prerequisites](#prerequisites)
-   * [Setting up the project](#setting-up-the-project)
-   * [Issues](#issues)
-   * [Contributing](#contributing)
-   * [Code of Conduct](#code-of-conduct)
-   * [License](#license)
-<!--te-->
+## Table of Contents
 
-## About The Project
+- [About the Project](#about-the-project)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
+- [Reporting Issues](#reporting-issues)
+- [Contributing](#contributing)
+- [License](#license)
 
-This is a very simple and light tic tac toe web game made using HTML, CSS and JS. This game is very easy to play.
+## About the Project
 
-![](tictactoe.png)
+Tic Tac Toe is a simple browser-based game built using HTML, CSS, and JavaScript. It provides a lightweight gaming experience without requiring any additional software installation.
 
-### Tech Stack
+The game can be played in a modern web browser that supports HTML5, CSS3, and JavaScript.
 
-* HTML
-* JavaScript
-* CSS
+### Screenshot
+
+Add a screenshot of the game to the repository and name it `tictactoe.png`.
+
+```markdown
+![Tic Tac Toe Gameplay](tictactoe.png)
+```
+
+## Tech Stack
+
+- **HTML5** — Structures the game interface.
+- **CSS3** — Styles the game interface.
+- **JavaScript** — Implements the game logic.
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+Follow the instructions below to run the game locally.
 
 ### Prerequisites
-There are no special requirements to play this game apart from having a Web Browser which supports HTML5 and CSS3.
 
-### Setting up the Project
+You only need a modern web browser that supports HTML5, CSS3, and JavaScript.
 
-1. Clone the repo
-```sh
-git clone https://github.com/yelynn1/tictactoe.git
-```
-2. Change the directory
-```sh
-cd tictactoe
-```
-3. Open the index.html file in any web browser.
+### Installation
 
-## Issues
+1. Clone the repository:
 
-Please file specific issues, bugs, or feature requests in our [issue tracker](https://github.com/yelynn1/tictactoe/issues). Follow the issue template while creating a new issue.
+   ```bash
+   git clone https://github.com/rangdajavas407-cmd/RPG-Little-adventure.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd RPG-Little-adventure
+   ```
+
+3. Open the game's HTML file in your web browser.
+
+   If the main file is named `index.html`, open that file directly.
+
+## How to Play
+
+1. Open the game in your web browser.
+2. Take turns selecting available squares.
+3. Follow the game's displayed rules to determine the winner.
+
+*Note: Adjust these instructions if the game's actual mechanics differ.*
+
+## Reporting Issues
+
+If you encounter a bug or have a feature request, please open an issue in the repository:
+
+[Report an Issue](https://github.com/rangdajavas407-cmd/RPG-Little-adventure/issues)
+
+Include a clear description of the problem and the steps needed to reproduce it.
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**. 
-If you wish to contribute a change to any of the existing features in this repo, please review our [contribution guide](https://github.com/yash2189/tictactoe/blob/fix-readme/CONTRIBUTING%20GUIDE.md) and send a [pull request](https://github.com/yelynn1/tictactoe/pulls).
+Contributions and suggestions are welcome.
 
-## Code of Conduct
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make and test your changes.
+4. Submit a pull request describing your improvements.
 
-We follow certain guidelines in order to maintain this repository.Please find our [code of conduct](https://github.com/yash2189/tictactoe/blob/fix-readme/CODE%20OF%20CONDUCT.md) and read it carefully.
+Please ensure that your changes are consistent with the project's existing code and license.
 
 ## License
-Distributed under the MIT License.See `LICENSE` for more information.
+
+This project includes software components distributed under the GNU Lesser General Public License, version 2.1 (LGPL-2.1), as stated in the original project documentation.
+
+The complete license text is available in `COPYING.LESSER`.
+
+Official license:  
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+
+**Important:** Confirm the license of the original source code and any third-party components before distributing this project. The project's own licensing terms should be stated clearly and consistently.
+
+---
+
+**Copyright © 2026 Calon Arang / Ranbyus Varadha.**
