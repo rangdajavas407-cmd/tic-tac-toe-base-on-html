@@ -56,7 +56,7 @@ You only need a modern web browser that supports HTML5, CSS3, and JavaScript.
 2. Navigate to the project directory:
 
    ```bash
-   cd tic-tac-toe-html
+   cd tic-tac-toe-base-on-html
    ```
 
 3. Open the game's HTML file in your web browser.
