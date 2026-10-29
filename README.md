@@ -50,7 +50,7 @@ You only need a modern web browser that supports HTML5, CSS3, and JavaScript.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/rangdajavas407-cmd/RPG-Little-adventure.git
+   git clone https://github.com/rangdajavas407-cmd/tic-tac-toe-base-on-html.git
    ```
 
 2. Navigate to the project directory:
