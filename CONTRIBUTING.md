@@ -1,70 +1,104 @@
 # Introduction
-## Project Name : Tic-Tac-Toe
+
+## Project Name: Tic-Tac-Toe
 
 ## Introduction
 
-Tic-Tac-Toe, a classic game of strategy and wit, pits two players against each other or against Computer in a battle for victory. With a simple grid and Xs and Os as markers, players strive to align three of their symbols in a row, testing their tactical skills and foresight.
+Tic-Tac-Toe is a classic strategy game where players compete against each other or against a computer. Using a simple 3×3 grid and X and O symbols, players aim to align three of their symbols horizontally, vertically, or diagonally to win the game.
 
-## Issue #45- [Reset Board button doesn't reset the table everytime (wierd and glitchy)](https://github.com/yelynn1/tictactoe/issues/45)
+This project focuses on improving the game's starting-player selection and fixing inconsistent behavior when resetting the board.
 
-## Fork Repo Link - https://github.com/tharinduj31/tictactoe/tree/dev-branch
+## Issue: Reset Board and Starting Player Selection
 
-## Pull Request - https://github.com/yelynn1/tictactoe/pull/135
+When the **Reset Board** button is pressed repeatedly, the starting player may change unexpectedly. Sometimes the AI plays first, while at other times the human player starts. The reset button should reset the game board without randomly changing the starting player.
 
-When pressing the Reset Board button for the first time, it resets the game, and the AI plays first. Pressing it again allows you to play first, and pressing it a third time chooses a random player. Essentially, the button isn't functioning as intended; it should only reset the board.
+To address this issue, two separate buttons are introduced to let players choose who starts the game: X or O.
 
-To fix this bug, two separate buttons needs to be added. One button selects whether X or O plays first. For example, pressing the button for X resets the game, and X (the AI) places its symbol first. The same applies to the button for O.
+## Fork Repository Link
 
-### Detailed discussion of issue examined
+Repository: [Tic-Tac-Toe](https://github.com/rangdajavas407-cmd/tic-tac-toe)
 
-* Button Implementation: Two buttons ("Play O first" and "Play X first") are added to HTML.
-* Functionality: JavaScript functions handle button clicks, reset board, and randomize the starting player.
-* Code Clarity: The code is structured and clear, improving maintainability and readability.
+*Replace the repository URL above if your actual GitHub repository uses a different name.*
+
+## Detailed Discussion of the Issue
+
+### Button Implementation
+
+Two HTML buttons are added: **Play X First** and **Play O First**. These buttons allow the player to choose which symbol starts the game.
+
+### Functionality
+
+JavaScript functions handle button clicks, reset the board, and initialize the game according to the selected starting player.
+
+### Code Clarity
+
+The code is organized into separate functions for selecting the starting player and resetting the board. This makes the game's behavior easier to understand and maintain.
 
 ## Code
 
-HTML Buttons:
+### HTML Buttons
 
-Two HTML buttons are defined with IDs 'selectXButton' and 'selectOButton'. These buttons allow the user to choose to play as either X or O.
+The following buttons allow players to select the starting symbol.
 
+```html
+<button id="selectXButton" onclick="selectFirstPlayer('X')">
+    Play X First
+</button>
+
+<button id="selectOButton" onclick="selectFirstPlayer('O')">
+    Play O First
+</button>
 ```
-<button id="selectXButton" onclick="selectFirstPlayer('X')">Play O first</button>
-<button id="selectOButton" onclick="selectFirstPlayer('O')">Play X first</button>
- ```
 
-JavaScript Functions:
+### JavaScript Functions
 
-selectFirstPlayer Function:
+#### `selectFirstPlayer()`
 
-```
+This function receives the selected symbol and starts a new game with the chosen starting player.
+
+```javascript
 const selectFirstPlayer = (symbol) => {
-    reset_board(symbol);
-}
+    reset_board1(symbol);
+};
 ```
 
- This function is triggered when one of the buttons ("Play as X" or "Play as O") is clicked. It takes a symbol ('X' or 'O') as a parameter and initiates the game by resetting the board with the selected first player.
+#### `reset_board1()`
 
- reset_board1 Function:
+This function initializes a new match according to the selected starting player.
 
-``` 
+```javascript
 const reset_board1 = (firstPlayer) => {
-    // Resetting game board and related elements
-    // Clearing previous game state
-    // Setting up the game for a new match
-}
+    // Clear the game board.
+    // Reset the game state.
+    // Set the selected starting player.
+    // Start the game with X or O.
+};
 ```
-This function determines the starting player based on the user's choice and initiates the game.
 
-Steps:
+The code above illustrates the intended structure. The actual implementation must include the existing game's board-resetting and turn-management logic.
 
-* Check if Game Board is Empty: Ensures that the game board is empty before determining the starting player.
-* Handling First Player Preference: If firstPlayer parameter is provided (either 'X' or 'O'), the function sets the starting player accordingly.
-* Initiating the Game: Calls functions such as showPlayer or addComputerMove to start the game with the chosen starting player.
+### Steps
 
-## Code review and Outcomes:
+1. **Check the game board:** Clear the previous moves and prepare an empty board.
+2. **Handle the starting-player preference:** Read the selected symbol, either X or O.
+3. **Initialize the game:** Set the correct starting turn and update the game interface.
+4. **Handle the AI turn:** If the computer is selected to start, call the existing AI move function.
+5. **Keep reset behavior consistent:** Resetting the board should not randomly change the starting player unless the player explicitly requests that behavior.
 
-To be done. 
+## Code Review and Outcomes
+
+To be completed after testing the implementation.
+
+The expected outcome is that the player can consistently select X or O to start the game. The board should reset correctly, and the selected starting-player preference should be respected.
 
 ## Reflection
 
-By implementing separate buttons for selecting the starting player and modifying the code to handle the user's choice, I have effectively addressed the issue of inconsistent behavior in the game's starting player selection. The code now allows users to explicitly choose whether they want to play as X or O, ensuring clarity and consistency in the game initialization process. This modification enhances the user experience and eliminates the need for unnecessary randomization. 
+This improvement aims to make the Tic-Tac-Toe game more consistent and user-friendly. By separating starting-player selection from the reset function, players can choose who begins each match without experiencing unexpected changes.
+
+The change also improves code organization by separating player selection, board resetting, and turn initialization. Further testing is needed to confirm that both starting-player options work correctly in single-player and two-player modes.
+
+## Author and Copyright
+
+Created by **Calon Arang / Ranbyus Varadha**.
+
+Copyright © 2026. All rights reserved, subject to the project's applicable license.
